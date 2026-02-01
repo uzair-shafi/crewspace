@@ -180,7 +180,7 @@ const BentoBox1 = () => {
             </div>
             <div className="flex flex-row justify-start pl-6">
               <img
-                src="/public/assets/washroom.jpg"
+                src="/assets/washroom.jpg"
                 width={380}
                 height={350}
                 alt="washroom"
