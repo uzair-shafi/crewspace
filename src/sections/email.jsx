@@ -99,7 +99,7 @@ export default function Subscr() {
             <button
               onClick={handleSubmit}
               disabled={loading}
-              className="bg-indigo-600 text-white rounded-full w-[180px] h-11 mr-1 px-10 flex items-center justify-center hover:bg-indigo-700 active:scale-95 transition disabled:opacity-60"
+              className="bg-indigo-600 text-white rounded-full h-11 mr-1 px-10 flex items-center justify-center hover:bg-indigo-700 active:scale-95 transition disabled:opacity-60"
             >
               {loading ? (
                 <span className="w-5 h-5 border-2 border-white/40 border-t-white rounded-full animate-spin" />
