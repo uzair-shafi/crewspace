@@ -49,7 +49,7 @@ export default function OurLatestCreation() {
       />
 
       <div
-        className="flex md:flex-row flex-col items-center gap-4 h-100 w-full max-w-6xl mt-18 mx-auto"
+        className="flex items-center gap-4 h-100 w-full max-w-6xl mt-18 mx-auto"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >

@@ -78,7 +78,7 @@ export default function Subscr() {
             this is it.
           </p>
           <motion.div
-            className="flex items-center justify-center mt-10 border border-slate-700 focus-within:outline focus-within:outline-indigo-600 text-sm rounded-full h-14 max-w-lg "
+            className="flex  items-center justify-center mt-10 border border-slate-700 focus-within:outline focus-within:outline-indigo-600 text-sm rounded-full h-14 max-w-lg "
             initial={{ y: 150, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
@@ -93,13 +93,13 @@ export default function Subscr() {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="bg-transparent outline-none rounded-full px-4 h-full flex-1 placeholder:text-slate-400"
+              className="bg-transparent outline-none rounded-full px-4 h-full flex-1 placeholder:text-slate-400 w-full"
               placeholder="Enter your email address"
             />
             <button
               onClick={handleSubmit}
               disabled={loading}
-              className="bg-indigo-600 text-white rounded-full h-11 mr-1 px-10 flex items-center justify-center hover:bg-indigo-700 active:scale-95 transition disabled:opacity-60"
+              className="bg-indigo-600 text-white rounded-full h-11 md:w-[180px] w-[100px] mr-1 px-10 flex items-center justify-center hover:bg-indigo-700 active:scale-95 transition disabled:opacity-60"
             >
               {loading ? (
                 <span className="w-5 h-5 border-2 border-white/40 border-t-white rounded-full animate-spin" />
