@@ -186,7 +186,7 @@ export default function Subscr() {
             {/* Instagram */}
             <div className="mt-5 text-sm text-white flex gap-2 justify-center">
               <Instagram className="size-5 text-pink-500" />
-              <span className="font-medium">@the_screw_space</span>
+              <span className="font-medium">the_crew_space</span>
             </div>
           </motion.div>
         </motion.div>

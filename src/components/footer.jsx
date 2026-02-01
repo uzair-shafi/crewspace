@@ -25,7 +25,7 @@ export default function Footer() {
         {/* Right - Instagram */}
         <div className="flex items-center gap-2">
           <Instagram className="size-5 text-pink-500" />
-          <span>the_screw_space</span>
+          <span>the_crew_space</span>
         </div>
       </div>
     </motion.footer>
