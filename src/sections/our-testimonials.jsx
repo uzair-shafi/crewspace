@@ -139,10 +139,10 @@ const AWSIcon = () => {
 
       <div className="flex flex-col">
         <div className="text-left p-1 mt-6">
-          <h1 className="text-white md:text-xl  text-lg min-w-2xl font-semibold">
+          <h1 className="text-white md:text-xl text-lg min-w-xl font-semibold">
             Aesthetic workspaces :{" "}
             <span className="md:text-md text-slate-400 font-medium text-sm -mt-[10px]">
-              you’ll love working from
+              you’ll love working <br className="md:hidden block"></br> from
             </span>
           </h1>
         </div>
@@ -161,8 +161,8 @@ const AWSIcon = () => {
 
 const BentoBox1 = () => {
   return (
-    <div className="bg-none flex justify-center items-center md:p-5 md:mb-0 mb-[600px] pl-[10px] rounded-lg  ">
-      <div className="flex flex-col md:flex-row gap-4 w-[550px] md:w-full min-h-[800px] md:min-h-[800px] md:h-[800px]">
+    <div className="bg-none flex justify-center items-center md:p-5 md:mb-0 mb-[600px] rounded-lg  ">
+      <div className="flex flex-col md:flex-row gap-4 w-[380px] md:w-full min-h-[800px] md:min-h-[800px] md:h-[800px]">
         <CardWithEffect>
           <div className="flex flex-col justify-between h-full">
             <div className="mb-4 px-6 mt-6">

@@ -10,8 +10,7 @@ export default function OurLatestCreation() {
   const sectionData = [
     {
       title: "Commercial Workspaces",
-      description:
-        "Crew Space is built inside commercial-grade buildings, designed specifically for work — not converted houses with a fancy name",
+      description: " Designed specifically for work — not converted houses",
       image: "/assets/1.jpg",
       align: "object-center",
     },
@@ -50,7 +49,7 @@ export default function OurLatestCreation() {
       />
 
       <div
-        className="flex items-center gap-4 h-100 w-full max-w-6xl mt-18 mx-auto"
+        className="flex md:flex-row flex-col items-center gap-4 h-100 w-full max-w-6xl mt-18 mx-auto"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >

@@ -70,7 +70,7 @@ export default function Subscr() {
               </svg> */}
             </p>
           </p>
-          <h1 className="text-3xl font-medium max-w-2xl mt-5 bg-gradient-to-r from-white to-[#b6abff] text-transparent bg-clip-text">
+          <h1 className="text-3xl font-medium max-w-xl mt-5 bg-gradient-to-r from-white to-[#b6abff] text-transparent bg-clip-text">
             Want a proper workspace? Get early-crew pricing & launch updates.
           </h1>
           <p className="text-base text-slate-400 max-w-md mt-4">
@@ -78,7 +78,7 @@ export default function Subscr() {
             this is it.
           </p>
           <motion.div
-            className="flex items-center justify-center mt-10 border border-slate-700 focus-within:outline focus-within:outline-indigo-600 text-sm rounded-full h-14 max-w-xl w-full"
+            className="flex items-center justify-center mt-10 border border-slate-700 focus-within:outline focus-within:outline-indigo-600 text-sm rounded-full h-14 max-w-lg "
             initial={{ y: 150, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
