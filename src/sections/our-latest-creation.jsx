@@ -12,19 +12,19 @@ export default function OurLatestCreation() {
       title: "Commercial Workspaces",
       description:
         "Crew Space is built inside commercial-grade buildings, designed specifically for work — not converted houses with a fancy name",
-      image: "/public/assets/1.jpg",
+      image: "/assets/1.jpg",
       align: "object-center",
     },
     {
       title: "New Era",
       description: "We’re setting a new standard for how Faisalabad works.",
-      image: "/public/assets/2.jpg",
+      image: "/assets/2.jpg",
       align: "object-right",
     },
     {
       title: "Vibes on The House",
       description: " Proper space. Professional vibe. Reasonable pricing",
-      image: "/public/assets/3.jpg",
+      image: "/assets/3.jpg",
       align: "object-center",
     },
   ];
