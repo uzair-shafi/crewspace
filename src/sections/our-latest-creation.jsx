@@ -38,7 +38,7 @@ export default function OurLatestCreation() {
 
   return (
     <section
-      className="flex flex-col md:mb-14 mb-[700px] items-center"
+      className="flex flex-col md:mb-14 mb-[700px] md:items-center items-start"
       id="creations"
     >
       <SectionTitle
@@ -49,7 +49,7 @@ export default function OurLatestCreation() {
       />
 
       <div
-        className="flex items-center gap-4 h-100 w-full max-w-6xl mt-18 mx-auto"
+        className="hidden md:flex items-center gap-4 h-100 w-full max-w-6xl mt-18 mx-auto"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
@@ -83,6 +83,24 @@ export default function OurLatestCreation() {
               <p className="text-sm mt-2">{data.description}</p>
             </div>
           </motion.div>
+        ))}
+      </div>
+      <div className="flex flex-col gap-18 md:hidden w-full max-w-md mx-auto mt-[40px]">
+        {sectionData.map((data, index) => (
+          <div
+            key={data.title}
+            className="bg-black/70 rounded-xl overflow-hidden cursor-pointer transition-all duration-500"
+          >
+            <img
+              src={data.image}
+              alt={data.title}
+              className="w-full object-cover h-40"
+            />
+            <div className=" mt-[20px] text-white">
+              <h2 className="text-xl font-semibold">{data.title}</h2>
+              <p className="text-sm mt-2">{data.description}</p>
+            </div>
+          </div>
         ))}
       </div>
     </section>

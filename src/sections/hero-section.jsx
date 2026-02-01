@@ -40,7 +40,7 @@ export default function HeroSection() {
         </defs>
       </motion.svg>
       <motion.a
-        className="flex items-center mt-48 gap-2 border border-slate-700 text-gray-50 rounded-full px-4 py-2"
+        className="flex items-center md:mt-40 mt-36 gap-2 border border-slate-700 text-gray-50 rounded-full px-4 py-2"
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true }}

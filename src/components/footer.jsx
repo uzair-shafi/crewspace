@@ -10,7 +10,7 @@ export default function Footer() {
       viewport={{ once: true }}
       transition={{ duration: 1 }}
     >
-      <div className="py-4 border-t mt-6 border-slate-700 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div className="py-4 border-t mt-6 border-slate-700 md:flex hidden items-center justify-between gap-4">
         {/* Left - WhatsApp */}
         <div className="flex items-center gap-2">
           <Phone className="size-4 text-green-500" />
@@ -22,6 +22,22 @@ export default function Footer() {
           Copyright 2026 © • Crew Space • All Rights Reserved.
         </p>
 
+        {/* Right - Instagram */}
+        <div className="flex items-center gap-2">
+          <Instagram className="size-5 text-pink-500" />
+          <span>the_crew_space</span>
+        </div>
+      </div>
+      <div className="md:hidden py-4 border-t mt-6 border-slate-700 flex flex-col items-center justify-between gap-4">
+        {/* Center - Copyright */}
+        <p className="text-center mb-[10px]">
+          Copyright 2026 © • Crew Space • All Rights Reserved.
+        </p>
+
+        <div className="flex items-center gap-2">
+          <Phone className="size-4 text-green-500" />
+          <span>0348 3191426</span>
+        </div>
         {/* Right - Instagram */}
         <div className="flex items-center gap-2">
           <Instagram className="size-5 text-pink-500" />

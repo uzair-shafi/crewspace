@@ -126,7 +126,7 @@ const CardWithEffect = ({ children }) => {
 
 const AWSIcon = () => {
   return (
-    <div className="flex flex-col justify-start h-full items-left relative md:pt-0 pt-2 pl-2">
+    <div className="flex flex-col justify-start h-full items-left relative md:pt-2 pt-2 md:pl-2">
       <div>
         <img
           src="/assets/kitchen.jpg"
@@ -178,7 +178,7 @@ const BentoBox1 = () => {
               </div>
               <div className="relative w-full mt-12"></div>
             </div>
-            <div className="flex flex-row justify-start pl-6">
+            <div className="flex flex-row justify-start md:pl-6 pl-0">
               <img
                 src="/assets/washroom.jpg"
                 width={380}
@@ -187,7 +187,7 @@ const BentoBox1 = () => {
                 className="shadow-2xl rounded-[20px] -mt-[60px] z-100"
               ></img>
             </div>
-            <div className="text-left p-6 ">
+            <div className="text-left md:p-6 md:mt-0 mt-6 mb-2">
               <h1 className="text-white md:text-2xl text-xl font-semibold mb-2">
                 Neat & clean restrooms
               </h1>
@@ -197,11 +197,11 @@ const BentoBox1 = () => {
             </div>
           </div>
         </CardWithEffect>
-        <div className="flex flex-col w-full md:w-1/2 gap-5 h-full md:h-[800px]">
+        <div className="flex flex-col w-full md:w-1/2 gap-5 h-full md:h-[800px] md:pl-2.5">
           <CardWithEffect>
-            <div className="flex flex-col justify-center h-full">
+            <div className="flex flex-col justify-start h-full">
               <LogoBeam />
-              <div className="text-left p-2 flex ">
+              <div className="text-left py-2 px-1 flex ">
                 <h1 className="text-white md:text-xl text-lg font-semibold ">
                   High-speed internet :{" "}
                   <span className="md:text-md text-slate-400 font-medium text-sm -mt-[10px]">
@@ -209,7 +209,7 @@ const BentoBox1 = () => {
                   </span>
                 </h1>
               </div>
-              <div className="text-left p-2 flex ">
+              <div className="text-left py-2 px-1 flex ">
                 <h1 className="text-white md:text-xl text-lg font-semibold ">
                   Private kitchen :{" "}
                   <span className="md:text-md text-slate-400 font-medium text-sm -mt-[10px]">
@@ -217,7 +217,7 @@ const BentoBox1 = () => {
                   </span>
                 </h1>
               </div>
-              <div className="text-left p-2 flex ">
+              <div className="text-left py-2 px-1 flex ">
                 <h1 className="text-white md:text-xl text-lg font-semibold ">
                   Book library :{" "}
                   <span className="md:text-md text-slate-400 font-medium text-sm -mt-[10px]">

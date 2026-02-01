@@ -6,7 +6,7 @@ export default function TrustedCompanies() {
     <section className="flex flex-col items-center">
       <SectionTitle title="Premium workspace. Surprisingly reasonable pricing" />
       <motion.div
-        className="relative max-w-6xl py-20 md:py-26 mt-18 md:w-full overflow-hidden mx-2 md:mx-auto border border-indigo-900 flex flex-col md:flex-row items-center justify-between bg-gradient-to-br from-[#401B98]/5 to-[#180027]/10 rounded-3xl p-4 md:p-10 text-white relative"
+        className="relative max-w-6xl md:h-fit h-[600px] py-20 md:py-26 mt-18 md:w-full overflow-hidden mx-2 md:mx-auto border border-indigo-900 flex flex-col md:flex-row items-center justify-between bg-gradient-to-br from-[#401B98]/5 to-[#180027]/10 rounded-3xl p-4 md:p-10 text-white relative"
         initial={{ y: 150, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true }}
@@ -22,7 +22,7 @@ export default function TrustedCompanies() {
           {/* <span className="bg-indigo-600 text-white text-xs px-3.5 py-1 rounded-full">
               NEW
             </span> */}
-          <p className="flex items-center flex items-center gap-2 rounded-full px-3 text-sm p-1 pr-3 font-semibold text-indigo-300 bg-indigo-200/15 gap-1">
+          <p className="flex items-center flex items-center gap-2 md:w-fit w-full rounded-full px-3 md:text-sm text-[11.2px] p-1 pr-3 font-semibold text-indigo-300 bg-indigo-200/15 gap-1">
             <span>Coworking shouldn’t cost more than your productivity </span>
             {/* <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +71,7 @@ export default function TrustedCompanies() {
             </svg>
           </button>
         </div>
-        <div className=" hidden md:block md:-mr-16 max-md:mt-10 absolute -right-7">
+        <div className=" hidden md:block md:-mr-16 max-md:mt-10 absolute -right-7 top-8">
           <motion.img
             className="max-w-xs md:max-w-sm"
             src="/assets/cube.png" // remove /public prefix

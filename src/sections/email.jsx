@@ -7,6 +7,7 @@ export default function Subscr() {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
+  const [imageLoaded, setImageLoaded] = useState(false);
 
   const SCRIPT_URL =
     "https://script.google.com/macros/s/AKfycbyjhp0fBypB2D4jDAX4iDpNMn0L-UC9VMx8ybEqCFrlJh4MPfdL-TvUImlEkdiyzLpE9w/exec";
@@ -27,7 +28,12 @@ export default function Subscr() {
       });
 
       setSuccess(true);
-      setShowPopup(true);
+      const img = new Image();
+      img.src = "/assets/fox.png";
+      img.onload = () => {
+        setImageLoaded(true);
+        setShowPopup(true);
+      };
       setEmail("");
     } catch (err) {
       console.error("Submission failed", err);
@@ -39,7 +45,7 @@ export default function Subscr() {
   return (
     <section className="flex flex-col items-center">
       <motion.div
-        className="relative max-w-6xl py-20 md:py-26 mt-18 md:w-full overflow-hidden mx-2 md:mx-auto border border-indigo-900 flex flex-col md:flex-row items-center justify-between bg-gradient-to-br from-[#401B98]/5 to-[#180027]/10 rounded-3xl p-4 md:p-10 text-white relative"
+        className="relative max-w-6xl py-20 md:py-26 mt-18 md:w-full md:h-fit h-[720px] overflow-hidden mx-2 md:mx-auto border border-indigo-900 flex flex-col md:flex-row items-center justify-between bg-gradient-to-br from-[#401B98]/5 to-[#180027]/10 rounded-3xl p-4 md:p-10 text-white relative"
         initial={{ y: 150, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true }}
@@ -49,10 +55,10 @@ export default function Subscr() {
         <div className="absolute pointer-events-none bottom-10 -z-1 right-20 size-64 bg-gradient-to-br from-[#536DFF] to-[#4F39F6]/60 blur-[180px]"></div>
         <div className="flex flex-col items-center md:items-start max-md:text-center">
           <p className="group flex items-center gap-2 rounded-full text-sm p-1 pr-3 text-indigo-300 bg-indigo-200/15">
-            <span className="bg-indigo-600 text-white text-sm px-3.5 py-1 rounded-full">
+            <span className="bg-indigo-600 text-white md:text-sm text-[12px] px-3.5 py-1 rounded-full">
               Launching very soon
             </span>
-            <p className="flex items-center flex items-center gap-2 rounded-full text-sm p-1 pr-3 font-semibold gap-1">
+            <p className="flex items-center flex items-center gap-2 rounded-full md:text-sm text-[12px] p-1 pr-3 font-semibold gap-1">
               <span> Limited early spots. </span>
               {/* <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -99,7 +105,7 @@ export default function Subscr() {
             <button
               onClick={handleSubmit}
               disabled={loading}
-              className="bg-indigo-600 text-white rounded-full h-11 md:w-[180px] w-[100px] mr-1 px-10 flex items-center justify-center hover:bg-indigo-700 active:scale-95 transition disabled:opacity-60"
+              className="bg-indigo-600 text-white rounded-full h-11 md:w-[180px] w-[100px] mr-1 md:px-10 px-3 flex items-center justify-center hover:bg-indigo-700 active:scale-95 transition disabled:opacity-60"
             >
               {loading ? (
                 <span className="w-5 h-5 border-2 border-white/40 border-t-white rounded-full animate-spin" />
@@ -144,7 +150,7 @@ export default function Subscr() {
           />
         </div>
       </motion.div>
-      {showPopup && (
+      {showPopup && imageLoaded && (
         <motion.div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/20 backdrop-blur-sm px-6"
           initial={{ opacity: 0 }}
